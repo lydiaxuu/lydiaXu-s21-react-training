@@ -5,7 +5,7 @@ import './App.css';
 function Snack() {
   const midnight_snack = "smoothies & fruit";
   return (
-    midnight_snack
+    <div> midnight_snack </div>
   );
 }
 
