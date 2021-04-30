@@ -5,7 +5,13 @@ import './App.css';
 function Snack() {
   const midnight_snack = "smoothies & fruit";
   return (
-    <div> midnight_snack </div>
+    <div 
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    > {midnight_snack} </div>
   );
 }
 
