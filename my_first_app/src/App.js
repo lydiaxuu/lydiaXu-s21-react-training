@@ -1,18 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './App.jsx';
 
-function Snack() {
-  const midnight_snack = "smoothies & fruit";
+function midnightSnack() {
+  const snackname = "smoothies and fruit";
   return (
-    <div 
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-      }}
-    > {midnight_snack} </div>
+    <div className="App">
+      <img src={logo} className="App-logo" alt="logo" />
+      <h1> {snackname} </h1>
+    </div>
   );
 }
 
-export default Snack;
+const element = React.createElement(
+  'h1', 
+  {className: 'snackname'},
+  'smoothies and fruit'
+);
+
+export default midnightSnack;
